@@ -1,0 +1,10 @@
+language: java
+jdk:
+        - oraclejdk8
+services:
+        - mongodb
+addons:
+        ssh_known_hosts: date.cs.umass.edu
+sudo: required
+script:
+        - date
