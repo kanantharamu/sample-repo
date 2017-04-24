@@ -73,12 +73,12 @@ Command(commandData) {
 
 execute() {
   Use the parsed data to make accesses to the cache
-  cache.put(key, value)
+  cache.put(key, value [,metadata])
   cache.get(key)
   Respond result appropriately
 }
 ```
-Class cache
+Class Cache
 -----------
 ```
 /*
@@ -88,5 +88,45 @@ child classes to implement a key-value store
 Cache(size) {
   startAddress = acquire memory of "size" at once
   
+}
+
+get(key) // Child classes need to implement
+put(key, value [,metadata]) // 
+```
+Class LRUCache (extends Cache)
+------------------------------
+
+```
+put(key, value, metadata) {
+
+}
+
+get() {
+
+}
+```
+
+Class RandomCache (extends Cache)
+---------------------------------
+```
+put(key, value, metadata) {
+
+}
+
+get() {
+
+}
+```
+
+Class LandlordCache (extends Cache)
+-----------------------------------
+
+```
+put(key, value, metadata) {
+
+}
+
+get() {
+
 }
 ```
